@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="flex justify-between items-end py-4 px-5 bg-[#2A3D19]">
+        <div class="flex justify-between">
+            <img class="lg:w-12 h-12" src="./images/logo.png" alt="logo icon">
+        </div>
+        <div>
+            <img class="lg:hidden md:hidden w-8 h-8 alig" src="./images/hamburger.png" alt="hamburger icon">
+        </div>
+
+        <div class="hidden md:flex justify-end items-center">
+            <ul class="text-white flex justify-between gap-4">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Therapy</a></li>
+                <li><a href="/">Community</a></li>
+            </ul>
+            <!--<img src="images/hamburger.png" class="w-12 ml-6" alt="">-->
+        </div>
+    </header>
+
+    <div class="bg-[#D4DDCC] py-3 px-5">
+        <h1 class="text-4xl font-bold text-center text-[#295700] py-2 mb-1"> Help and Suppot</h1>
+        <h2 class="font-bold text-center text-[#295700] py-1 px-2">NEED TO SPEAK WITH THE TEAM ?</h2>
+        <h3 class="text-center text-[#295700] py-1 px-2 mb-4">We are just around the  corner. Reach out to us anytime, anywhere.<br>
+            Are  you looking for more in-depth information, or perhaps you have specific questions.</h3>
+
+        <div class="min-h-screen grid grid-rows-2 md:flex lg:flex gap-5">
+            <div class="w-full md:w-full lg:w-1/2 bg-no-repeat rounded-lg" style="background-image: url('./images/help.jpg'); background-size: cover;"></div>
+            <div class="w-full md:w-full lg:w-1/2 bg-[#DCAE96] py-10 px-8 rounded-lg shadow-md shadow-[#295700]">
+                <p class="text-[#295700] font-bold mb-4">Please enter your details and we will get in touch as soon as possible </p>
+                <form id="contact-form" action="a">
+                    <div class="grid grid-cols-2 gap-5 mb-10">
+                        <input type="text" id="fname" class="border border-gray-400 py-1 px-2" placeholder="Enter your first name" required>
+                        <input type="text" id="lname" class="border border-gray-400 py-1 px-2" placeholder="Enter your last name" required>
+                    </div>
+                    <div class="grid grid-cols-2 mb-10 gap-5">
+                        <input type="email" id="email" class="border border-gray-400 py-1 px-2" placeholder="Jonahmichael@yahaoo.com" required>
+                        <input type="number" id="pnumber" class="border border-gray-400 py-1 px-2" placeholder="Phone Number" required>
+                    </div>
+                    <div class="mb-5">
+                        <textarea id="message" class="border border-gray-400 py-1 px-2 w-full" placeholder="Type your message" required></textarea>
+                    </div>
+                    <div class="mb-10">
+                        <input type="checkbox" id="" class="border border-gray-400 py-1 px-2" required> 
+                        <span class="text-[#295700]"> I accept the Terms and Condition </span>         
+                    </div>
+                     <button type="submit" class="bg-[#295700] py-2 px-3 w-full hover:bg-green-500 text-white">Send </button>
+                </form>
+            </div>  
+        </div>
+    </div>
+    
+        
+    <footer class="w-full mt-2">
+        <div class="w-full flex items-center justify-evenly bg-[#2A3D19] text-slate-100 px-10 py-5">
+            <div>
+                <span class="text-2xl font-body_text font-medium">Thrive</span>
+                <ul>
+                    <li class="font-body_text font-medium">About Us</li>
+                    <li class="font-body_text font-medium">Contact Us</li>
+                    <li class="font-body_text font-medium">Privacy Policy</li>
+                </ul>
+            </div>
+            <div>
+                <span class="text-xl font-body_text font-medium">Social</span>
+                <ul>
+                    <li class="font-body_text font-medium">Facebook</li>
+                    <li class="font-body_text font-medium">Instagram</li>
+                    <li class="font-body_text font-medium">Twitter</li>
+                </ul>
+            </div>
+            <div>
+                <span class="text-2xl font-body_text font-medium">Services</span>
+                <ul>
+                    <li class="font-body_text font-medium">Resources</li>
+                    <li class="font-body_text font-medium">Relaxation</li>
+                    <li class="font-body_text font-medium">Therapy</li>
+                </ul>
+            </div>
+            <div class="flex lg:items-center lg:justify-center lg:font-medium">
+                <input class="p-1 rounded-l-sm" type="text" placeholder="Email Address">
+                <button class="rounded-r-sm bg-button px-2 py-1.5 outline-none font-body_text font-semibold">Subscribe</button>
+            </div>
+        </div>
+        <div class="w-full flex relative items-end justify-center bg-[#2A3D19] text-white">
+            <span class="text-center text-sm font-body_text font-medium">copyright&copy; 2023 thrive.techtribe all right reserved.</span>
+            <a class="absolute right-0 cursor-pointer" href="#hero">
+            <img src="./images/arrow.png" class="lg:w-10 h-8" alt="scroll up">
+        </a>
+        </div>
+        <!--<div class="flex flex-row justify-around bg-[#2A3D19] py-0 md:hidden">
+            <img src="images/hamburger.png" class="w-1/5" alt="">
+            <img src="images/hamburger.png" class="w-1/5" alt="">
+            <img src="images/hamburger.png" class="w-1/5" alt="">
+            <img src="images/hamburger.png" class="w-1/5" alt="">
+            <img src="images/hamburger.png" class="w-1/5" alt="">
+        </div>-->
+    
+    </footer>
+ 
+    
+</body>
+</html>
